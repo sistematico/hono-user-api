@@ -1,3 +1,11 @@
+# Hono User API
+
+## API Endpoints
+
+| --- | --- | --- |
+| Endpoint | Method | Description |
+| /users/list | GET | List users |
+
 To install dependencies:
 ```sh
 bun install

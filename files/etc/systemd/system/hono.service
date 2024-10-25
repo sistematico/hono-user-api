@@ -1,0 +1,14 @@
+[Unit]
+Description=Hono User API
+After=network.target
+
+[Service]
+Type=simple
+User=nginx
+WorkingDirectory=/var/www/hono-user-api
+ExecStart=/home/nginx/.bun/bin/bun run src/index.ts
+# no|on-success|on-failure|on-abnormal|on-watchdog|on-abort|always
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
